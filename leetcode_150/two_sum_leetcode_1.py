@@ -23,7 +23,7 @@ def two_sum(nums, target):
     for idx, val in enumerate(nums):
         diff = target - val
         if diff in hashmap:
-            return (idx, hashmap[diff])
+            return (hashmap[diff], idx)
         hashmap[val]=idx
         
     return "not found"
